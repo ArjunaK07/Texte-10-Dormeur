@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
     <style>
         body{
             background-color: #282828;
             display: block;
         }
 h1 {
-  color: rgb(255, 84, 84);
-  background-color: rgb(255, 206, 80);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(255,  84,  84);
+  background-color: rgb(255,  206,  80);
+  font-family:Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
   text-align: center;
 }
 
 .navigation{
 border-radius: 5px; height: 50px;
 }
+
 .navigation_bar{
   display: grid;
   grid-template-columns: auto auto auto;
@@ -28,28 +29,21 @@ border-radius: 5px; height: 50px;
 }
 
 .page{
-  background-color: rgb(57, 57, 57);
-  margin-left: 0px;
-  margin-right: 0px;
+  background-color: rgb(57,  57,  57);
+  margin-left: 250px;
+  margin-right: 250px;
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 10px;
 }
-@media screen and (min-width:750px) {
-            .page {
-               margin-left: 250px;
-               margin-right: 250px;
-               margin-top: 0px;
-               margin-bottom: 0px;
-            }
-        }
+
 .intro{
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
 color: coral; 
 font-size: 25px;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman',  Times,  serif;
     font-size: 30px;
 }
 img{
@@ -58,32 +52,25 @@ img{
 .img2{
     height: 300px;
 }
-.div1{
-grid-column: 1;
-grid-row: 1;
-margin-left: 0px;
-margin-top: 10px;
-}
-.div2{
-width: 400px;
-padding-right: 20px;
-}
+
 .titre{
-  color: rgb(255, 133, 93);
-  background-color: rgb(2, 100, 186);
+  color: rgb(255,  133,  93);
+  background-color: rgb(2,  100,  186);
   padding: 5px;
   font-weight: bold;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana,  Geneva,  Tahoma,  sans-serif;
 }
 .texte{
-  color:aliceblue
+  color:aliceblue;
+  font-family:'Times New Roman',  Times,  serif;
+  font-size: 25px;
 }
 .légende{
   color: bisque;
   font-weight: bold;
 }
 .outro{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+  font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif; 
   font-size: 25px;
   color: crimson;
 }
@@ -93,66 +80,63 @@ padding-right: 20px;
   color: aqua; 
   background-color: coral; 
   font-weight: bold; 
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Trebuchet MS',  'Lucida Sans Unicode',  'Lucida Grande',  'Lucida Sans',  Arial,  sans-serif;
 }
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
-  text-align: center;
-  height: 30px; 
-  font-family:'Times New Roman', Times, serif;
+  text-align: justify;
+  font-family:'Times New Roman',  Times,  serif;
   font-size: 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   background-color: whitesmoke;
-  color: indianred;
+  color: brown;
   font-weight: bold;
+  margin: 3px;
+  padding: 3px;
+
 }
 
 .tooltip .tooltiptext {
-  vertical-align: center;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
   visibility: hidden;
-  width: 750px;
-  background-color: #555;
+  background-color: rgb(80, 80, 80);
   color: #fff;
-  text-align: center;
+  text-align: left;
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext2 {
-  vertical-align: center;
+  padding: 15px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-auto-rows: minmax(100px, auto);
-  visibility: hidden;
-  width: 750px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  min-width: 500px;
+  max-width: 550px;
   left: 50%;
-  margin-left: -410px;
-  opacity: 0;
-  transition: opacity 0.3s;
+	transform: translateX(-25%);
+  justify-content: center;
 }
 
+.div1{
+width: auto;
+height: auto;
+position: static;
+padding: 5px;
+}
+img {
+  height: 150px;
+  width: auto;
+}
+.div2{
+min-width: 500px;
+max-width: 550px;
+height: auto;
+position: static;
+margin-top: 10px ;
+
+}
 .tooltip .tooltiptext::after {
   position: absolute;
   top: 100%;
@@ -161,11 +145,13 @@ padding-right: 20px;
   border-width: 5px;
   border-style: solid;
   border-color: #555 transparent transparent transparent;
+  opacity: 0.4;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+
 }
 .logo_akatsuki{
   height: 50px;
@@ -173,7 +159,7 @@ padding-right: 20px;
 }
 .OUTRO
 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact,  Haettenschweiler,  'Arial Narrow Bold',  sans-serif;
     font-size: 20px;
     color: aliceblue;
 }
@@ -182,13 +168,57 @@ padding-right: 20px;
   grid-template-columns: 3em 9fr ;
   grid-gap: 10px;
 }
-.div2{
+
+.outro_div{
   display: inline-block;
-  padding-top: 20px;
+  padding-top: 5px;
   width: 100%;
 }
 
+@media screen and (max-width:750px) {
+            .page {
+               margin-left: 0px;
+               margin-right: 0px;
+               margin-top: 0px;
+               margin-bottom: 0px;
+            }
+            .tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: rgb(80, 80, 80);
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  padding: 15px;
+  display: grid;
+  grid-template-rows: 150px auto;
+  row-gap: 20px;
+  max-width: 250px;
+  left: 50%;
+	transform: translateX(-25%);
+}
 
+.div1{
+width: 300px;
+max-height: 300px;
+position: static;
+padding: 5px;
+}
+img{
+  max-width: 250px;
+  max-height: 150px;
+}
+.div2{
+max-width: 250px;
+height: auto;
+position: static;
+margin-top: 10px ;
+background-color: aquamarine;
+
+}
+}
     </style>
 
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"/>
@@ -265,47 +295,47 @@ padding-right: 20px;
                      IV/ (deuxième tercet) Une chute brutale </br>
           </p>
 
- <p class="texte">
+ <div class="texte">
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> C’est <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> l'ouverture du poème par le présentatif « c'est » montre une volonté de description picturale. Le poète va s'adresser à l'imaginaire du lecteur. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> C’est <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> l'ouverture du poème par le présentatif « c'est » montre une volonté de description picturale. Le poète va s'adresser à l'imaginaire du lecteur. </div></span></div> 
 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> un trou de verdure <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le « trou de verdure » évoque un havre de paix, mais peut également désigner une tombe à la 2e lecture. Dès lors, le poème donne à voir une paysage idyllique, mais aussi ambigu. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> un trou de verdure <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le « trou de verdure » évoque un havre de paix, mais peut également désigner une tombe à la 2e lecture. Dès lors, le poème donne à voir une paysage idyllique, mais aussi ambigu. </div></span></div> 
 
 
 
 où 
 
-<button class="tooltip" style="background-color:bisque; color:indianred;"> chante une rivière <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Pourtant, dans cette première strophe, la gaité l'emporte : la nature est personnifiée ce qui donne une impression de fête et d'harmonie. La personnification des éléments naturels évoque également la vie de la nature qui s'oppose à la révélation de la mort du soldat au dernier vers. </div></span></button> 
+<div class="tooltip" style="background-color:bisque; color:indianred;"> chante une rivière <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Pourtant, dans cette première strophe, la gaité l'emporte : la nature est personnifiée ce qui donne une impression de fête et d'harmonie. La personnification des éléments naturels évoque également la vie de la nature qui s'oppose à la révélation de la mort du soldat au dernier vers. </div></span></div> 
 
 
 
 </br>
-<button class="tooltip" style="background-color:bisque; color:indianred;"> Accrochant follement aux herbes des haillons <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Pourtant, dans cette première strophe, la gaité l'emporte : la nature est personnifiée ce qui donne une impression de fête et d'harmonie. La personnification des éléments naturels évoque également la vie de la nature qui s'oppose à la révélation de la mort du soldat au dernier vers. </div></span></button> 
+<div class="tooltip" style="background-color:bisque; color:indianred;"> Accrochant follement aux herbes des haillons <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Pourtant, dans cette première strophe, la gaité l'emporte : la nature est personnifiée ce qui donne une impression de fête et d'harmonie. La personnification des éléments naturels évoque également la vie de la nature qui s'oppose à la révélation de la mort du soldat au dernier vers. </div></span></div> 
 
 
 </br>
 
-<button class="tooltip" style="background-color:cornflowerblue; color:indianred;"> D’argent; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le tableau est également celui d'un paysage lumineux avec le champ lexical de la lumière: Les deux rejets des vers 3 et A participent d'ailleurs à mettre en valeur cette lumière omniprésente. </div></span></button> 
+<div class="tooltip" style="background-color:cornflowerblue; color:indianred;"> D’argent; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le tableau est également celui d'un paysage lumineux avec le champ lexical de la lumière: Les deux rejets des vers 3 et A participent d'ailleurs à mettre en valeur cette lumière omniprésente. </div></span></div> 
 
 
 où 
 
-<button class="tooltip" style="background-color:cornflowerblue; color:indianred;"> le soleil, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le tableau est également celui d'un paysage lumineux avec le champ lexical de la lumière: Les deux rejets des vers 3 et A participent d'ailleurs à mettre en valeur cette lumière omniprésente. </div></span></button> 
+<div class="tooltip" style="background-color:cornflowerblue; color:indianred;"> le soleil, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le tableau est également celui d'un paysage lumineux avec le champ lexical de la lumière: Les deux rejets des vers 3 et A participent d'ailleurs à mettre en valeur cette lumière omniprésente. </div></span></div> 
 
 
 de 
 
-<button class="tooltip" style="background-color:bisque; color:indianred;"> la montagne fière, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Pourtant, dans cette première strophe, la gaité l'emporte : la nature est personnifiée ce qui donne une impression de fête et d'harmonie. La personnification des éléments naturels évoque également la vie de la nature qui s'oppose à la révélation de la mort du soldat au dernier vers. </div></span></button> 
+<div class="tooltip" style="background-color:bisque; color:indianred;"> la montagne fière, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Pourtant, dans cette première strophe, la gaité l'emporte : la nature est personnifiée ce qui donne une impression de fête et d'harmonie. La personnification des éléments naturels évoque également la vie de la nature qui s'oppose à la révélation de la mort du soldat au dernier vers. </div></span></div> 
 
 
 </br>
-<button class="tooltip" style="background-color:cornflowerblue; color:indianred;"> Luit : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le tableau est également celui d'un paysage lumineux avec le champ lexical de la lumière: Les deux rejets des vers 3 et A participent d'ailleurs à mettre en valeur cette lumière omniprésente. </div></span></button> 
+<div class="tooltip" style="background-color:cornflowerblue; color:indianred;"> Luit : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le tableau est également celui d'un paysage lumineux avec le champ lexical de la lumière: Les deux rejets des vers 3 et A participent d'ailleurs à mettre en valeur cette lumière omniprésente. </div></span></div> 
 
 
 c’est  
 
-<button class="tooltip"> un petit val qui mousse de rayons. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Enfin le retour du présentatif au vers 4 permet de clore la description par une métaphore intéressante : « un petit val qui mousse de rayons ». Cette métaphore permet, en plus de renforcer la lumière du tableau, d'évoquer la nature comme un tout, avec des éléments qui fusionnent, donc une image d'harmonie. </div></span></button> 
+<div class="tooltip"> un petit val qui mousse de rayons. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Enfin le retour du présentatif au vers 4 permet de clore la description par une métaphore intéressante : « un petit val qui mousse de rayons ». Cette métaphore permet, en plus de renforcer la lumière du tableau, d'évoquer la nature comme un tout, avec des éléments qui fusionnent, donc une image d'harmonie. </div></span></div> 
 
 </br></br>
 
@@ -314,53 +344,53 @@ c’est
 
 </br></br>
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> Un soldat jeune, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le groupe nominal « Un soldat jeune » permet d'introduire le personnage. On note l'utilisation de l'indéfini « un » qui permet d'universaliser le propos : il pourrait s'agir de n'importe quel soldat. L'adjectif épithète « jeune » permet à Rimbaud de rappeler qu'un grand nombre des appelés à la guerre sont très jeunes. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> Un soldat jeune, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le groupe nominal « Un soldat jeune » permet d'introduire le personnage. On note l'utilisation de l'indéfini « un » qui permet d'universaliser le propos : il pourrait s'agir de n'importe quel soldat. L'adjectif épithète « jeune » permet à Rimbaud de rappeler qu'un grand nombre des appelés à la guerre sont très jeunes. </div></span></div> 
 
 
-<button class="tooltip" style="background-color:darkorange; color:darkmagenta;"> bouche ouverte, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La position du soldat est porteuse d'ambiguïté. Elle fait d'abord penser au sommeil avec un champ lexical dans l'ensemble de la strophe : « bouche ouverte » ; « Dort » ; « étendu » ; « lit ». </div></span></button> 
+<div class="tooltip" style="background-color:darkorange; color:darkmagenta;"> bouche ouverte, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La position du soldat est porteuse d'ambiguïté. Elle fait d'abord penser au sommeil avec un champ lexical dans l'ensemble de la strophe : « bouche ouverte » ; « Dort » ; « étendu » ; « lit ». </div></span></div> 
 
 
 
-<button class="tooltip" style="background-color:darkgoldenrod; color:darksalmon;"> tête nue, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évocation du froid (« frais cresson bleu » ; « tête nue ») semble contraster avec la chaleur de la nature dans la strophe précédente. </div></span></button>
+<div class="tooltip" style="background-color:darkgoldenrod; color:darksalmon;"> tête nue, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évocation du froid (« frais cresson bleu » ; « tête nue ») semble contraster avec la chaleur de la nature dans la strophe précédente. </div></span></div>
 
 </br>
 
 Et 
 
-<button class="tooltip" style="background-color:darkseagreen; color:cyan;"> la nuque baignant <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'immobilité parfaite du personnage s'oppose au mouvement incessant de la nature, rappelée par les référence à l'eau (toujours en mouvement) : «la nuque baignant » ; « la lumière pleut ». On voit clairement que le personnage se dégage du paysage dans lequel il est pourtant intégré (dans l'herbe/ sous la nue/ lit vert") Il n'entre pas en harmonie avec la nature. De plus, au niveau des couleurs, l'antithèse permet d'opposer « pâle » avec la métaphore « la lumière pleut ». Donc dans cette strophe, la nature continue d'évoquer la continuité de la vie et l'harmonie, mais le soldat fait tâche. </div></span></button>
+<div class="tooltip" style="background-color:darkseagreen; color:cyan;"> la nuque baignant <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'immobilité parfaite du personnage s'oppose au mouvement incessant de la nature, rappelée par les référence à l'eau (toujours en mouvement) : «la nuque baignant » ; « la lumière pleut ». On voit clairement que le personnage se dégage du paysage dans lequel il est pourtant intégré (dans l'herbe/ sous la nue/ lit vert") Il n'entre pas en harmonie avec la nature. De plus, au niveau des couleurs, l'antithèse permet d'opposer « pâle » avec la métaphore « la lumière pleut ». Donc dans cette strophe, la nature continue d'évoquer la continuité de la vie et l'harmonie, mais le soldat fait tâche. </div></span></div>
 
 
 dans 
 
-<button class="tooltip" style="background-color:darkgoldenrod; color:darksalmon;"> le frais cresson bleu, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évocation du froid (« frais cresson bleu » ; « tête nue ») semble contraster avec la chaleur de la nature dans la strophe précédente. </div></span></button> 
+<div class="tooltip" style="background-color:darkgoldenrod; color:darksalmon;"> le frais cresson bleu, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'évocation du froid (« frais cresson bleu » ; « tête nue ») semble contraster avec la chaleur de la nature dans la strophe précédente. </div></span></div> 
 
 
 </br>
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> Dort ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le verbe « dort » est souligné par son rejet comme pour insister sur l'immobilité du corps. Il sera d'ailleurs repris aux vers 9 et 13. D'autre part ce verbe n'a qu'une lettre de différence avec le mot „mort" </div></span></button>
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> Dort ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le verbe « dort » est souligné par son rejet comme pour insister sur l'immobilité du corps. Il sera d'ailleurs repris aux vers 9 et 13. D'autre part ce verbe n'a qu'une lettre de différence avec le mot „mort" </div></span></div>
 
 
 il est 
 
 
-<button class="tooltip" style="background-color:darkorange; color:darkmagenta;"> étendu <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La position du soldat est porteuse d'ambiguïté. Elle fait d'abord penser au sommeil avec un champ lexical dans l'ensemble de la strophe : « bouche ouverte » ; « Dort » ; « étendu » ; « lit ». </div></span></button>
+<div class="tooltip" style="background-color:darkorange; color:darkmagenta;"> étendu <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La position du soldat est porteuse d'ambiguïté. Elle fait d'abord penser au sommeil avec un champ lexical dans l'ensemble de la strophe : « bouche ouverte » ; « Dort » ; « étendu » ; « lit ». </div></span></div>
 
 dans l’herbe, sous la nue,
 
 </br>
 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> Pâle <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> l'enjambement met en valeur la fragilité du soldat avec l'adjectif "pâle". Le soldat est-il seulement endormi, ou est-il également malade ? ou pire ? Ainsi, la « bouche ouverte » du vers 5 peut être lue comme un signe de sommeil profond, ou alors comme une attitude de mort.</div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> Pâle <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> l'enjambement met en valeur la fragilité du soldat avec l'adjectif "pâle". Le soldat est-il seulement endormi, ou est-il également malade ? ou pire ? Ainsi, la « bouche ouverte » du vers 5 peut être lue comme un signe de sommeil profond, ou alors comme une attitude de mort.</div></span></div> 
 
 
 dans son 
 
 
-<button class="tooltip" style="background-color:darkorange; color:darkmagenta;"> lit <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La position du soldat est porteuse d'ambiguïté. Elle fait d'abord penser au sommeil avec un champ lexical dans l'ensemble de la strophe : « bouche ouverte » ; « Dort » ; « étendu » ; « lit ». </div></span></button> 
+<div class="tooltip" style="background-color:darkorange; color:darkmagenta;"> lit <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> La position du soldat est porteuse d'ambiguïté. Elle fait d'abord penser au sommeil avec un champ lexical dans l'ensemble de la strophe : « bouche ouverte » ; « Dort » ; « étendu » ; « lit ». </div></span></div> 
 
 
 vert où 
 
-<button class="tooltip" style="background-color:darkseagreen; color:cyan;"> la lumière pleut. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'immobilité parfaite du personnage s'oppose au mouvement incessant de la nature, rappelée par les référence à l'eau (toujours en mouvement) : «la nuque baignant » ; « la lumière pleut ». On voit clairement que le personnage se dégage du paysage dans lequel il est pourtant intégré (dans l'herbe/ sous la nue/ lit vert") Il n'entre pas en harmonie avec la nature. De plus, au niveau des couleurs, l'antithèse permet d'opposer « pâle » avec la métaphore « la lumière pleut ». Donc dans cette strophe, la nature continue d'évoquer la continuité de la vie et l'harmonie, mais le soldat fait tâche. </div></span></button>
+<div class="tooltip" style="background-color:darkseagreen; color:cyan;"> la lumière pleut. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> L'immobilité parfaite du personnage s'oppose au mouvement incessant de la nature, rappelée par les référence à l'eau (toujours en mouvement) : «la nuque baignant » ; « la lumière pleut ». On voit clairement que le personnage se dégage du paysage dans lequel il est pourtant intégré (dans l'herbe/ sous la nue/ lit vert") Il n'entre pas en harmonie avec la nature. De plus, au niveau des couleurs, l'antithèse permet d'opposer « pâle » avec la métaphore « la lumière pleut ». Donc dans cette strophe, la nature continue d'évoquer la continuité de la vie et l'harmonie, mais le soldat fait tâche. </div></span></div>
 
 </br></br>
 
@@ -369,27 +399,27 @@ vert où
 
 </br></br>
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> Les pieds dans les glaïeuls, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Cependant, de plus en plus de termes suggèrent qu'il ne fait pas que dormir. D'abord, "les pieds dans les glaïeuls" peuvent faire penser à la mort (ce sont traditionnellement des fleurs de deuil). </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> Les pieds dans les glaïeuls, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Cependant, de plus en plus de termes suggèrent qu'il ne fait pas que dormir. D'abord, "les pieds dans les glaïeuls" peuvent faire penser à la mort (ce sont traditionnellement des fleurs de deuil). </div></span></div> 
 
-<button class="tooltip" style="background-color:firebrick; color:lime;"> il dort. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> On constate d'emblée la poursuite du lexique du sommeil: « il dort » ; « un somme » ; « berce-le ». Ce champ lexical est associé à celui de l'enfance qui souligne le jeune âge du soldat („enfant/ somme/ berce-le".) </div></span></button>  
+<div class="tooltip" style="background-color:firebrick; color:lime;"> il dort. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> On constate d'emblée la poursuite du lexique du sommeil: « il dort » ; « un somme » ; « berce-le ». Ce champ lexical est associé à celui de l'enfance qui souligne le jeune âge du soldat („enfant/ somme/ berce-le".) </div></span></div>  
 
-<button class="tooltip" style="background-color:darkslateblue; color:paleturquoise;"> Souriant comme <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Ensuite, la comparaison « Souriant comme sourirait un enfant malade » fait écho à l'adjectif « pâle » de la strophe précédente et interroge le lecteur sur l'état de santé du personnage. L'absence de pause entre les deux vers permise par l'enjambement accentue l'effet de suggestion. </div></span></button> 
+<div class="tooltip" style="background-color:darkslateblue; color:paleturquoise;"> Souriant comme <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Ensuite, la comparaison « Souriant comme sourirait un enfant malade » fait écho à l'adjectif « pâle » de la strophe précédente et interroge le lecteur sur l'état de santé du personnage. L'absence de pause entre les deux vers permise par l'enjambement accentue l'effet de suggestion. </div></span></div> 
 
 </br>
 
-<button class="tooltip" style="background-color:darkslateblue; color:paleturquoise;"> Sourirait un enfant malade, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Ensuite, la comparaison « Souriant comme sourirait un enfant malade » fait écho à l'adjectif « pâle » de la strophe précédente et interroge le lecteur sur l'état de santé du personnage. L'absence de pause entre les deux vers permise par l'enjambement accentue l'effet de suggestion. </div></span></button> 
+<div class="tooltip" style="background-color:darkslateblue; color:paleturquoise;"> Sourirait un enfant malade, <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Ensuite, la comparaison « Souriant comme sourirait un enfant malade » fait écho à l'adjectif « pâle » de la strophe précédente et interroge le lecteur sur l'état de santé du personnage. L'absence de pause entre les deux vers permise par l'enjambement accentue l'effet de suggestion. </div></span></div> 
 
 il fait 
 
-<button class="tooltip" style="background-color:firebrick; color:lime;"> un somme : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> On constate d'emblée la poursuite du lexique du sommeil: « il dort » ; « un somme » ; « berce-le ». Ce champ lexical est associé à celui de l'enfance qui souligne le jeune âge du soldat („enfant/ somme/ berce-le".) </div></span></button>  
+<div class="tooltip" style="background-color:firebrick; color:lime;"> un somme : <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> On constate d'emblée la poursuite du lexique du sommeil: « il dort » ; « un somme » ; « berce-le ». Ce champ lexical est associé à celui de l'enfance qui souligne le jeune âge du soldat („enfant/ somme/ berce-le".) </div></span></div>  
 
 Nature,</br>
 
-<button class="tooltip" style="background-color:firebrick; color:lime;">  berce-le <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> On constate d'emblée la poursuite du lexique du sommeil: « il dort » ; « un somme » ; « berce-le ». Ce champ lexical est associé à celui de l'enfance qui souligne le jeune âge du soldat („enfant/ somme/ berce-le".) </div></span></button> 
+<div class="tooltip" style="background-color:firebrick; color:lime;">  berce-le <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> On constate d'emblée la poursuite du lexique du sommeil: « il dort » ; « un somme » ; « berce-le ». Ce champ lexical est associé à celui de l'enfance qui souligne le jeune âge du soldat („enfant/ somme/ berce-le".) </div></span></div> 
  
 chaudement : 
  
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> il a froid. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Enfin, le froid suggéré dans la strophe 2 est affirmé dans cette strophe: « il a froid ». </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> il a froid. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Enfin, le froid suggéré dans la strophe 2 est affirmé dans cette strophe: « il a froid ». </div></span></div> 
 
 </br></br>
 
@@ -400,20 +430,20 @@ chaudement :
 
 </br></br>
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> Les parfums ne font pas frissonner sa narine ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le premier vers de la dernière strophe contient une négation grammaticale totale. Cette négation, dans une nature aussi vivace et stimulante suggère définitivement la mort. Aussi peut-on parler d'une litote pour dire que le soldat ne respire pas. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> Les parfums ne font pas frissonner sa narine ; <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le premier vers de la dernière strophe contient une négation grammaticale totale. Cette négation, dans une nature aussi vivace et stimulante suggère définitivement la mort. Aussi peut-on parler d'une litote pour dire que le soldat ne respire pas. </div></span></div> 
 
 
 Il</br>
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> dort dans le soleil, la main sur sa poitrine <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le vers suivant souligne une dernière fois l'opposition entre le froid du corps et la chaleur de la nature. « Il dort dans le soleil » insiste sur l'idée que le soleil recouvre entièrement le corps avec la préposition « dans », comme si le soleil englobait le soldat. Pourtant, le lecteur sait qu' „il a froid ». Sa posture, « la main sur la poitrine » peut évoquer une posture solennelle, comme s'il était tombé au combat. Par ailleurs, la main sur la poitrine peut cacher une blessure, ce qui est confirmé au dernier vers. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> dort dans le soleil, la main sur sa poitrine <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le vers suivant souligne une dernière fois l'opposition entre le froid du corps et la chaleur de la nature. « Il dort dans le soleil » insiste sur l'idée que le soleil recouvre entièrement le corps avec la préposition « dans », comme si le soleil englobait le soldat. Pourtant, le lecteur sait qu' „il a froid ». Sa posture, « la main sur la poitrine » peut évoquer une posture solennelle, comme s'il était tombé au combat. Par ailleurs, la main sur la poitrine peut cacher une blessure, ce qui est confirmé au dernier vers. </div></span></div> 
 
 
 
 </br>
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> Tranquille. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le rejet de l'adjectif « Tranquille » insiste une dernière fois sur l'immobilité du soldat avec ce début de vers qui s'éteint au bout d'un seul mot, comme un dernier souffle. Ce rejet permet également de faire renaître l'opposition entre le mouvement de la nature et l'immobilité du soldat. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> Tranquille. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Le rejet de l'adjectif « Tranquille » insiste une dernière fois sur l'immobilité du soldat avec ce début de vers qui s'éteint au bout d'un seul mot, comme un dernier souffle. Ce rejet permet également de faire renaître l'opposition entre le mouvement de la nature et l'immobilité du soldat. </div></span></div> 
 
-<button class="tooltip" style="background-color:whitesmoke; color:indianred;"> Il a deux trous rouges au côté droit. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Enfin, les derniers mots du poème, comme souvent dans les sonnets, constituent une chute : le soldat est mort. Cependant, Rimbaud reste humble, se contentant de décrire sobrement, il ne tombe pas dans un registre pathétique ni polémique : « Il a deux trous rouge au côté droit » clot le tableau sur l'image d'un soldat ayant reçu deux balles dans le coeur (vu de face, le côté droit est celui du coeur). La couleur rouge apporte une dernière opposition entre le soldat et la nature, celle du vert pendant l'ensemble du poème et du rouge dans le dernier vers. Cette phrase simple est d'ailleurs un euphémisme pour dire que le soldat a reçu deux balles. </div></span></button> 
+<div class="tooltip" style="background-color:whitesmoke; color:indianred;"> Il a deux trous rouges au côté droit. <span class="tooltiptext"><div class="div1"><img src=""></div><div class="div2"> Enfin, les derniers mots du poème, comme souvent dans les sonnets, constituent une chute : le soldat est mort. Cependant, Rimbaud reste humble, se contentant de décrire sobrement, il ne tombe pas dans un registre pathétique ni polémique : « Il a deux trous rouge au côté droit » clot le tableau sur l'image d'un soldat ayant reçu deux balles dans le coeur (vu de face, le côté droit est celui du coeur). La couleur rouge apporte une dernière opposition entre le soldat et la nature, celle du vert pendant l'ensemble du poème et du rouge dans le dernier vers. Cette phrase simple est d'ailleurs un euphémisme pour dire que le soldat a reçu deux balles. </div></span></div> 
 
 </br></br>
 
@@ -424,7 +454,9 @@ Il</br>
 
 </br></br>
 
-<p class="légende">
+</div>
+ 
+ <p class="légende">
 Les Chants de Maldoror, Lautréamont, 1869, chant deuxième 
   </p>
 
@@ -448,9 +480,9 @@ Les Chants de Maldoror, Lautréamont, 1869, chant deuxième
 </p>
     </p>
 
- <button class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
+ <div class="tooltip" style="background-color: chartreuse; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color:indianred;">
     Procédés Littéraires et Stylistiques = 20
-</button>
+</div>
 
 </br></br>
 
@@ -485,11 +517,11 @@ Tranquille. Il a deux trous rouges au côté droit. </br></br>
 
     <div class="source">
 
-      <div class="div1">
+      <div class="intro_div">
         <a href="https://arjunak07.github.io/Accueil-Premiere/"> <img class="logo_akatsuki" src="https://raw.githubusercontent.com/ArjunaK07/Reccueil-des-textes/main/logo%20akatsuki.png"> </a>
       </div>
     
-      <div class="div2">
+      <div class="outro_div">
         <span class="OUTRO">
           FAIT PAR L'AKATSUKI DES CODEURS, PROPULSÉ PAR LE LYCÉE ANDRÉ MALRAUX
         </span>
